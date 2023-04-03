@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./badge.component.scss']
 })
 export class BadgeComponent {
+  hidden = false;
 
+  toggleBadgeVisibility() {
+    this.hidden = !this.hidden;
+  }
 }
